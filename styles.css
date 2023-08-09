@@ -1,0 +1,194 @@
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #9ED2BE;
+  color: white;
+}
+
+main {
+  max-width: 88%;
+  margin: 0;
+}
+
+.main-container {
+  /* Add styles to center the container */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px 20px;
+  max-width: 100%;
+}
+
+img {
+  float: left;
+  margin-right: 15px;
+  border-radius: 50%;
+  height: 35px;
+  width: 35px;
+  border: 2px solid whitesmoke;
+}
+
+h2 {
+  font-size: 15px;
+  font-family: sans-serif;
+  opacity: 90%;
+}
+
+.img-container h2 {
+  margin-bottom: 3px;
+}
+
+.img-container p {
+  margin-top: 0;
+}
+
+.container {
+  border-radius: 5px;
+  padding: 10px 40px 0 40px;
+}
+
+.daniel-container {
+  background-color: hsl(263, 55%, 52%);
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+.jonathan-container {
+  background: hsl(217, 19%, 35%);
+}
+
+.jeanette-container {
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.kira-container {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 3;
+}
+
+.jeanette-container,
+.kira-container {
+  background-color: hsl(0, 0%, 100%);
+  color: black;
+}
+
+.patrick-container {
+  background-color: hsl(219, 29%, 14%);
+  grid-column-start: 2;
+  grid-column-end: 4;
+}
+
+.para-heading {
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 1.2;
+  opacity: 90%;
+}
+
+.para-text {
+  font-size: 17px;
+  line-height: 1.2;
+  opacity: 70%;
+  font-weight: normal;
+}
+
+.kira-container .para-heading,
+.jeanette-container .para-heading {
+  color: hsl(217, 19%, 35%);
+}
+
+.kira-container .para-text,
+.jeanette-container .para-text {
+  color: dimgrey;
+}
+
+.sub-heading {
+  opacity: 50%;
+}
+
+.daniel-container,
+.first {
+  position: relative;
+  padding-right: 20px;
+}
+
+.daniel-container .section2 {
+  padding-right: 30px;
+}
+
+#quotes-image {
+  height: 115px;
+  width: auto;
+  border-radius: 0%;
+  position: absolute;
+  right: 60px;
+  top: 0;
+  border: none;
+
+}
+
+@media (max-width: 400px) {
+  .main-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 20px 0 20px;
+    margin-top: 100px;
+  }
+
+  main {
+    max-width: 100%;
+  }
+
+  .para-text {
+    font-size: 15px;
+    margin-bottom: 20px !important;
+  }
+
+  .para-heading {
+    font-size: 20px;
+  }
+
+  #quotes-image {
+    right: 0;
+  }
+
+  .kira-container {
+    margin-bottom: 50px;
+  }
+
+
+}
+
+@media (max-width: 1300px) {
+  main {
+    max-width: 95%;
+  }
+
+  .para-text {
+    font-size: 17px;
+    margin-bottom: 0;
+  }
+
+  .para-heading {
+    font-size: 21px;
+  }
+
+  .container {
+    padding-top: 20px;
+  }
+
+  .section2 {
+    display: grid;
+    align-items: end;
+  }
+
+  .kira-container .para-text {
+    margin-bottom: 10px;
+  }
+
+}
